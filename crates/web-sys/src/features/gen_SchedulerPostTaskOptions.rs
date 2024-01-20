@@ -2,7 +2,6 @@
 #![allow(clippy::all)]
 use super::*;
 use wasm_bindgen::prelude::*;
-#[cfg(web_sys_unstable_apis)]
 #[wasm_bindgen]
 extern "C" {
     # [wasm_bindgen (extends = :: js_sys :: Object , js_name = SchedulerPostTaskOptions)]
@@ -15,7 +14,6 @@ extern "C" {
     #[doc = "[described in the `wasm-bindgen` guide](https://rustwasm.github.io/docs/wasm-bindgen/web-sys/unstable-apis.html)*"]
     pub type SchedulerPostTaskOptions;
 }
-#[cfg(web_sys_unstable_apis)]
 impl SchedulerPostTaskOptions {
     #[doc = "Construct a new `SchedulerPostTaskOptions`."]
     #[doc = ""]
@@ -45,7 +43,6 @@ impl SchedulerPostTaskOptions {
         let _ = r;
         self
     }
-    #[cfg(web_sys_unstable_apis)]
     #[cfg(feature = "TaskPriority")]
     #[doc = "Change the `priority` field of this object."]
     #[doc = ""]

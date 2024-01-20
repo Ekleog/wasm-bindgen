@@ -1938,7 +1938,6 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `CacheStorage`, `Window`*"]
     pub fn caches(this: &Window) -> Result<CacheStorage, JsValue>;
-    #[cfg(web_sys_unstable_apis)]
     #[cfg(feature = "Scheduler")]
     # [wasm_bindgen (structural , method , getter , js_class = "Window" , js_name = scheduler)]
     #[doc = "Getter for the `scheduler` field of this object."]

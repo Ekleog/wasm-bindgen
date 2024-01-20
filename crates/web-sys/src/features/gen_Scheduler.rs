@@ -2,7 +2,6 @@
 #![allow(clippy::all)]
 use super::*;
 use wasm_bindgen::prelude::*;
-#[cfg(web_sys_unstable_apis)]
 #[wasm_bindgen]
 extern "C" {
     # [wasm_bindgen (extends = :: js_sys :: Object , js_name = Scheduler , typescript_type = "Scheduler")]
@@ -27,7 +26,6 @@ extern "C" {
     #[doc = "*This API is unstable and requires `--cfg=web_sys_unstable_apis` to be activated, as"]
     #[doc = "[described in the `wasm-bindgen` guide](https://rustwasm.github.io/docs/wasm-bindgen/web-sys/unstable-apis.html)*"]
     pub fn post_task(this: &Scheduler, callback: &::js_sys::Function) -> ::js_sys::Promise;
-    #[cfg(web_sys_unstable_apis)]
     #[cfg(feature = "SchedulerPostTaskOptions")]
     # [wasm_bindgen (method , structural , js_class = "Scheduler" , js_name = postTask)]
     #[doc = "The `postTask()` method."]
